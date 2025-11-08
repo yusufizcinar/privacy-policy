@@ -1,81 +1,200 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medory Gizlilik Politikası</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #fafafa;
-      color: #333;
-      max-width: 800px;
-    }
-    h1 {
-      color: #2a4d8f;
-    }
-    h2 {
-      margin-top: 30px;
-      color: #1a3c6e;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medory Gizlilik Politikası</title>
+    <style>
+        /* * STİL AYARLARI (CSS)
+         * Gönderdiğiniz örnekteki gibi resmi, serif fontlu bir görünüm.
+         */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif; /* Örnekteki gibi serif font */
+            line-height: 1.7;
+            color: #333;
+            background-color: #fdfdfd;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px; /* Okunabilirlik için genişliği kısıtla */
+            margin: 20px auto; /* Sayfayı ortala */
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Logo Stili */
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto; /* Logoyu ortala */
+            max-width: 150px; /* Logonun maksimum genişliği */
+            height: auto;
+        }
+
+        /* Ana Başlık (Örnekteki gibi) */
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2.5em;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        /* Başlığın altındaki çizgi */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #555;
+            margin-bottom: 25px;
+        }
+
+        /* Son Güncelleme Tarihi */
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Ana Bölüm Başlıkları (1, 2, 3...) */
+        h2 {
+            font-size: 1.8em;
+            color: #111;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        /* Alt Başlıklar (A, B...) */
+        h3 {
+            font-size: 1.4em;
+            color: #222;
+            margin-top: 25px;
+        }
+
+        p, li {
+            font-size: 1.05em; /* Okunaklı font boyutu */
+            color: #333;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Link Stili */
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Önemli notlar için */
+        .important-note {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0056b3;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-  <h1>Medory Gizlilik Politikası</h1>
-  <p><strong>Yürürlük tarihi:</strong> 7 Kasım 2025</p>
-  <p>Medory (“uygulama”), kullanıcılarının gizliliğine önem verir. Bu gizlilik politikası, hangi verileri topladığımızı, verileri nasıl kullandığımızı ve kullanıcı haklarını açıklar. Uygulamayı kullanarak bu politikanın şartlarını kabul etmiş olursunuz.</p>
 
-  <h2>Toplanan Bilgiler</h2>
-  <ul>
-    <li><strong>Hesap Bilgileri:</strong> E-posta adresi, ad soyad, şifre.</li>
-    <li><strong>Sağlık / İlaç Bilgileri:</strong> Kullanıcının eklediği ilaç isimleri, zamanlama bilgileri, takvim kayıtları.</li>
-    <li><strong>Konum Verisi:</strong> Yakındaki eczaneleri göstermek için isteğe bağlı olarak konum izni.</li>
-    <li><strong>Cihaz Bilgileri:</strong> Bildirim token’ı ve reklam kimliği (IDFA) gibi cihaz tanımlayıcıları.</li>
-    <li><strong>Kullanım Verisi:</strong> Uygulamanın nasıl kullanıldığına dair anonim istatistikler.</li>
-  </ul>
+    <div class="container">
 
-  <h2>Verilerin Kullanımı</h2>
-  <ul>
-    <li>Kullanıcı hesabı oluşturmak, giriş yapmayı sağlamak ve profili yönetmek.</li>
-    <li>İlaç hatırlatmaları göndermek, takvim kayıtlarını göstermek.</li>
-    <li>Firebase ve Google servisleri aracılığıyla uygulama performansını izlemek ve iyileştirmek.</li>
-    <li>Google AdMob üzerinden reklam göstermek; kişiselleştirmeyi kapatmak için iOS ayarlarını kullanabilirsiniz.</li>
-    <li>Yasal yükümlülükleri yerine getirmek ve güvenliği sağlamak.</li>
-  </ul>
+        <img src="logo.png" alt="Medory Logo" class="logo">
 
-  <h2>Üçüncü Taraf Servisler</h2>
-  <ul>
-    <li><strong>Firebase Authentication & Firestore (Google LLC):</strong> Oturum yönetimi ve veri saklama.</li>
-    <li><strong>Firebase Analytics / Crashlytics:</strong> Performans ve hata analizi.</li>
-    <li><strong>Google Mobile Ads / User Messaging Platform:</strong> Reklam gösterimi ve çerez izin yönetimi.</li>
-  </ul>
-  <p>Bu servisler, verileri bizim adımıza işler; kendi gizlilik politikaları ve güvenlik standartlarına uyarlar.</p>
+        <h1>Medory Gizlilik Politikası</h1>
+        <hr>
+        <p class="last-updated">
+            <strong>Son Güncelleme Tarihi:</strong> 8 Kasım 2025
+        </p>
 
-  <h2>Verilerin Saklanması</h2>
-  <p>Veriler Firebase’in sağladığı güvenli sunucularda saklanır. Hesabınızı silmeniz halinde ilgili veriler makul süre içinde (genellikle 30 gün) kalıcı olarak silinir. Bildirim token’ları ve reklam kimlikleri, Apple/Google’ın belirlediği süreler doğrultusunda düzenli olarak yenilenir.</p>
+        <p>Medory ("Uygulama") olarak, kullanıcılarımızın ("Kullanıcı", "siz") gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası, Uygulamamızı kullandığınızda hangi kişisel verileri topladığımızı, bu verileri nasıl kullandığımızı, kimlerle paylaştığımızı ve verileriniz üzerindeki haklarınızı açıklamaktadır.</p>
+        
+        <p>Uygulamayı indirerek veya kullanarak, bu politikada açıklanan veri toplama ve kullanma uygulamalarını kabul etmiş olursunuz.</p>
 
-  <h2>Kullanıcı Hakları</h2>
-  <ul>
-    <li>Dilediğiniz zaman hesabınızı uygulama içinden silme talebi gönderebilirsiniz.</li>
-    <li>Verilerinizin bir kopyasını istemek veya güncellemek için bizimle iletişime geçebilirsiniz.</li>
-    <li>Reklam kişiselleştirmesini kapatmak için iOS Ayarlar → Gizlilik → Takip menüsünden tercihinizi güncelleyebilirsiniz.</li>
-  </ul>
+        
+        <h2>1. Topladığımız Bilgiler</h2>
+        <p>Uygulamanın işlevlerini yerine getirebilmesi için aşağıdaki türde bilgileri toplar ve işleriz:</p>
 
-  <h2>Güvenlik</h2>
-  <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri (HTTPS/TLS, doğrulanmış erişim kontrolü) uygulanmaktadır. Ancak internet üzerinden hiçbir aktarımın %100 güvenli olduğu garanti edilemez.</p>
+        <h3>A. Sizin Sağladığınız Bilgiler:</h3>
+        <ul>
+            <li><strong>Hesap Bilgileri:</strong> Uygulamada bir hesap oluşturmak için sağladığınız <strong>e-posta adresi</strong> ve <strong>ad-soyad</strong> bilgileri.</li>
+            <li><strong>Sağlık ve İlaç Bilgileri:</strong> Uygulamanın temel işlevlerini (hatırlatıcı, takvim) kullanmak için gönüllü olarak eklediğiniz ilaç isimleri, kullanım zamanlamaları ve takvim kayıtları. Bu veriler hassas veri niteliğindedir ve yalnızca hizmetin size sunulması amacıyla işlenir.</li>
+        </ul>
 
-  <h2>İletişim</h2>
-  <p>Her türlü soru, talep veya geri bildirim için aşağıdaki adreslerden bize ulaşabilirsiniz:</p>
-  <ul>
-    <li><strong>E-posta:</strong> yusufizcinar@gmail.com</li>
-  </ul>
+        <h3>B. Otomatik Olarak Toplanan Bilgiler:</h3>
+        <ul>
+            <li><strong>Konum Verisi:</strong> Yalnızca sizden <strong>isteğe bağlı olarak</strong> izin almamız halinde, yakındaki eczaneleri bulma özelliği için mevcut konum veriniz işlenir. Bu izni dilediğiniz zaman cihaz ayarlarından kapatabilirsiniz.</li>
+            <li><strong>Cihaz Bilgileri:</strong> Bildirim hatırlatıcılarını gönderebilmek için anonim bir "Bildirim Token'ı" (Notification Token) ve reklamları yönetmek için Reklam Tanımlayıcısı (IDFA) gibi teknik cihaz tanımlayıcıları.</li>
+            <li><strong>Kullanım Verisi:</strong> Uygulamanın hangi özelliklerinin kullanıldığı, karşılaşılan hatalar ve performans sorunları gibi anonim hale getirilmiş istatistiksel kullanım verileri.</li>
+        </ul>
 
-  <h2>Politikada Değişiklikler</h2>
-  <p>Gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikleri uygulama içi duyuru veya e-posta yoluyla bildiririz. Güncellenmiş politika yayımlandığı anda yürürlüğe girer.</p>
-</body>
+        
+        <h2>2. Verilerin Kullanım Amaçları</h2>
+        <p>Topladığımız verileri aşağıdaki amaçlar doğrultusunda kullanırız:</p>
+        <ul>
+            <li><strong>Hizmet Sunumu:</strong> Kullanıcı hesabı oluşturmanızı ve yönetmenizi sağlamak, ilaç hatırlatıcıları göndermek ve takvim kayıtlarınızı size özel olarak göstermek.</li>
+            <li><strong>Güvenli Kimlik Doğrulama:</strong> Sisteme güvenli bir şekilde giriş yapabilmenizi sağlamak.
+                <p class="important-note">
+                    <strong>Önemli Not:</strong> Hesabınız için oluşturduğunuz şifre, tarafımızca <strong>asla okunamaz.</strong> Şifreniz, veritabanımızda geri döndürülemez bir şekilde şifrelenerek (hash) saklanır ve kimse tarafından (biz dahil) görüntülenemez.
+                </p>
+            </li>
+            <li><strong>Uygulama İyileştirme:</strong> Firebase ve Google servisleri aracılığıyla uygulama performansını izlemek, hataları tespit etmek ve kullanıcı deneyimini iyileştirmek.</li>
+            <li><strong>Reklamcılık:</strong> Google AdMob servisi aracılığıyla uygulama içinde reklamlar göstermek. Reklam kişiselleştirmesini cihaz ayarlarınızdan kısıtlayabilirsiniz.</li>
+            <li><strong>Yasal Yükümlülükler:</strong> Yasal taleplere yanıt vermek ve platformun güvenliğini sağlamak.</li>
+        </ul>
+
+        
+        <h2>3. Üçüncü Taraf Hizmetler ve Veri Paylaşımı</h2>
+        <p>Verilerinizi üçüncü taraf şirketlere satmayız veya kiralamayız. Verileriniz, yalnızca uygulamanın çalışması için gerekli olan aşağıdaki güvenilir iş ortaklarıyla paylaşılır:</p>
+        <ul>
+            <li><strong>Google (Firebase & Google Cloud):</strong> Kullanıcı kimlik doğrulaması (Authentication), veritabanı (Firestore), hata takibi (Crashlytics), analiz (Analytics) ve reklam (AdMob) hizmetleri için kullanılır. Bu servisler, verilerinizi bizim adımıza güvenli bir şekilde işler.
+                <ul>
+                    <li>Google'ın gizlilik politikasına <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">buradan</a> ulaşabilirsiniz.</li>
+                </ul>
+            </li>
+        </ul>
+
+        
+        <h2>4. Veri Saklama ve Silme</h2>
+        <p>Kişisel verileriniz, hesabınız aktif olduğu sürece Firebase'in güvenli sunucularında saklanır. Hesabınızı uygulama içinden sildiğinizde, hesabınızla ilişkili tüm veriler (ilaç bilgileri, e-posta, ad-soyad vb.) makul bir süre içinde (genellikle 30 günü geçmeyecek şekilde) kalıcı olarak silinir.</p>
+
+        
+        <h2>5. Kullanıcı Haklarınız</h2>
+        <p>Verileriniz üzerinde aşağıdaki haklara sahipsiniz:</p>
+        <ul>
+            <li><strong>Erişim ve Düzeltme:</strong> Hesap bilgilerinizi uygulama içinden dilediğiniz zaman güncelleyebilirsiniz.</li>
+            <li><strong>Silme:</strong> Uygulama ayarlarında bulunan "Hesabı Sil" özelliğini kullanarak dilediğiniz zaman hesabınızı ve ilgili tüm verilerinizi kalıcı olarak silme talebi gönderebilirsiniz.</li>
+            <li><strong>İtiraz ve Kısıtlama:</strong> Reklam kişiselleştirmesini, cihazınızın <strong>iOS Ayarları &gt; Gizlilik ve Güvenlik &gt; Takip</strong> menüsünden kısıtlayabilirsiniz.</li>
+        </ul>
+
+        
+        <h2>6. Veri Güvenliği</h2>
+        <p>Verilerinizin güvenliğini ciddiye alıyoruz. Sektör standardı teknik güvenlik önlemleri (HTTPS/TLS ile şifreli veri aktarımı, güvenli kimlik doğrulama vb.) kullanıyoruz. Ancak, internet üzerinden hiçbir veri aktarım yönteminin veya elektronik depolama yönteminin %100 güvenli olmadığını lütfen unutmayın.</p>
+
+        
+        <h2>7. Politikadaki Değişiklikler</h2>
+        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda sizi uygulama içi bildirim veya e-posta yoluyla bilgilendireceğiz. Politikayı düzenli olarak gözden geçirmek kullanıcının sorumluluğundadır.</p>
+
+        
+        <h2>8. İletişim</h2>
+        <p>Bu gizlilik politikası veya kişisel verilerinizle ilgili herhangi bir sorunuz veya talebiniz olursa, lütfen bizimle iletişime geçmekten çekinmeyin:</p>
+        <ul>
+            <li><strong>E-posta:</strong> yusufizcinar@gmail.com</li>
+        </ul>
+
+    </div> </body>
 </html>
