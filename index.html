@@ -117,8 +117,9 @@
     </style>
     <script>
         function changeLanguage(lang) {
-            const trElems = document.querySelectorAll("[lang='tr']");
-            const enElems = document.querySelectorAll("[lang='en']");
+            const trElems = document.querySelectorAll(".lang-tr");
+            const enElems = document.querySelectorAll(".lang-en");
+
             if(lang === "tr") {
                 trElems.forEach(e => e.style.display = "block");
                 enElems.forEach(e => e.style.display = "none");
@@ -126,13 +127,15 @@
                 trElems.forEach(e => e.style.display = "none");
                 enElems.forEach(e => e.style.display = "block");
             }
+
             document.querySelectorAll('.lang-nav button').forEach(btn => btn.classList.remove('active'));
             document.querySelector(`.lang-nav button[data-lang="${lang}"]`).classList.add('active');
+
             document.documentElement.lang = lang;
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            changeLanguage('tr'); // Başlangıçta Türkçe
+            changeLanguage('tr'); // Başlangıç dili
         });
     </script>
 </head>
@@ -148,7 +151,7 @@
         <img src="medory-logo.png" alt="Medory Logo" class="logo">
 
         <!-- TÜRKÇE -->
-        <div lang="tr">
+        <div class="lang-tr">
             <h1>MEDORY GİZLİLİK POLİTİKASI</h1>
             <hr>
             <p class="last-updated"><strong>Son Güncelleme Tarihi:</strong> 2 Aralık 2025</p>
@@ -209,7 +212,7 @@
         </div>
 
         <!-- ENGLISH -->
-        <div lang="en" style="display:none;">
+        <div class="lang-en" style="display:none;">
             <h1>MEDORY PRIVACY POLICY</h1>
             <hr>
             <p class="last-updated"><strong>Last Updated:</strong> December 2, 2025</p>
