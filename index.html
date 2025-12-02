@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medory Gizlilik Politikası</title>
+    <title>Medory Privacy Policy - Gizlilik Politikası</title>
+
     <style>
-        /* * STİL AYARLARI (CSS)
-         * Gönderdiğiniz örnekteki gibi resmi, serif fontlu bir görünüm.
-         */
         body {
-            font-family: 'Georgia', 'Times New Roman', serif; /* Örnekteki gibi serif font */
+            font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.7;
             color: #333;
             background-color: #fdfdfd;
@@ -19,23 +17,21 @@
 
         .container {
             width: 90%;
-            max-width: 850px; /* Okunabilirlik için genişliği kısıtla */
-            margin: 20px auto; /* Sayfayı ortala */
+            max-width: 850px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #ffffff;
             border: 1px solid #eee;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
-        /* Logo Stili */
         .logo {
             display: block;
-            margin: 0 auto 20px auto; /* Logoyu ortala */
-            max-width: 150px; /* Logonun maksimum genişliği */
+            margin: 0 auto 20px auto;
+            max-width: 150px;
             height: auto;
         }
 
-        /* Ana Başlık (Örnekteki gibi) */
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -44,7 +40,6 @@
             margin-bottom: 15px;
         }
 
-        /* Başlığın altındaki çizgi */
         hr {
             border: 0;
             height: 1px;
@@ -52,7 +47,6 @@
             margin-bottom: 25px;
         }
 
-        /* Son Güncelleme Tarihi */
         .last-updated {
             text-align: center;
             font-style: italic;
@@ -60,7 +54,6 @@
             margin-bottom: 30px;
         }
 
-        /* Ana Bölüm Başlıkları (1, 2, 3...) */
         h2 {
             font-size: 1.8em;
             color: #111;
@@ -69,7 +62,6 @@
             margin-top: 40px;
         }
 
-        /* Alt Başlıklar (A, B...) */
         h3 {
             font-size: 1.4em;
             color: #222;
@@ -77,7 +69,7 @@
         }
 
         p, li {
-            font-size: 1.05em; /* Okunaklı font boyutu */
+            font-size: 1.05em;
             color: #333;
         }
 
@@ -89,7 +81,6 @@
             margin-bottom: 10px;
         }
 
-        /* Link Stili */
         a {
             color: #0056b3;
             text-decoration: none;
@@ -99,7 +90,6 @@
             text-decoration: underline;
         }
 
-        /* Önemli notlar için */
         .important-note {
             background-color: #f9f9f9;
             border-left: 4px solid #0056b3;
@@ -107,94 +97,176 @@
             margin-top: 10px;
             font-style: italic;
         }
+
+        /* Dil Butonları */
+        .language-switch {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .language-switch button {
+            font-size: 1em;
+            padding: 8px 14px;
+            margin: 0 8px;
+            cursor: pointer;
+            border: 1px solid #555;
+            background: #fff;
+        }
+
+        .language-switch button:hover {
+            background: #f1f1f1;
+        }
     </style>
+
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll("[lang='tr']").forEach(e => e.style.display = lang === "tr" ? "block" : "none");
+            document.querySelectorAll("[lang='en']").forEach(e => e.style.display = lang === "en" ? "block" : "none");
+        }
+
+        // Varsayılan dil: Türkçe
+        window.onload = function() {
+            changeLanguage("tr");
+        };
+    </script>
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <img src="medory-logo.png" alt="Medory Logo" class="logo">
+    <!-- Dil Butonları -->
+    <div class="language-switch">
+        <button onclick="changeLanguage('tr')">Türkçe</button>
+        <button onclick="changeLanguage('en')">English</button>
+    </div>
 
+    <img src="medory-logo.png" alt="Medory Logo" class="logo">
+
+    <!-- TÜRKÇE METİN -->
+    <div lang="tr">
         <h1>Medory Gizlilik Politikası</h1>
         <hr>
-        <p class="last-updated">
-            <strong>Son Güncelleme Tarihi:</strong> 8 Kasım 2025
-        </p>
+        <p class="last-updated"><strong>Son Güncelleme Tarihi:</strong> 8 Kasım 2025</p>
 
-        <p>Medory ("Uygulama") olarak, kullanıcılarımızın ("Kullanıcı", "siz") gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası, Uygulamamızı kullandığınızda hangi kişisel verileri topladığımızı, bu verileri nasıl kullandığımızı, kimlerle paylaştığımızı ve verileriniz üzerindeki haklarınızı açıklamaktadır.</p>
-        
-        <p>Uygulamayı indirerek veya kullanarak, bu politikada açıklanan veri toplama ve kullanma uygulamalarını kabul etmiş olursunuz.</p>
+        <p>Medory ("Uygulama") olarak, kullanıcılarımızın gizliliğine ve kişisel verilerinin korunmasına büyük önem veriyoruz...</p>
 
-        
         <h2>1. Topladığımız Bilgiler</h2>
-        <p>Uygulamanın işlevlerini yerine getirebilmesi için aşağıdaki türde bilgileri toplar ve işleriz:</p>
+        <p>Uygulamanın işlevlerini yerine getirebilmesi için aşağıdaki türde bilgileri toplarız:</p>
 
-        <h3>A. Sizin Sağladığınız Bilgiler:</h3>
+        <h3>A. Sizin Sağladığınız Bilgiler</h3>
         <ul>
-            <li><strong>Hesap Bilgileri:</strong> Uygulamada bir hesap oluşturmak için sağladığınız <strong>e-posta adresi</strong> ve <strong>ad-soyad</strong> bilgileri.</li>
-            <li><strong>Sağlık ve İlaç Bilgileri:</strong> Uygulamanın temel işlevlerini (hatırlatıcı, takvim) kullanmak için gönüllü olarak eklediğiniz ilaç isimleri, kullanım zamanlamaları ve takvim kayıtları. Bu veriler hassas veri niteliğindedir ve yalnızca hizmetin size sunulması amacıyla işlenir.</li>
+            <li><strong>Hesap Bilgileri:</strong> E-posta ve ad-soyad bilgileri.</li>
+            <li><strong>Sağlık ve İlaç Bilgileri:</strong> Hatırlatıcı ve takvim kayıtları.</li>
         </ul>
 
-        <h3>B. Otomatik Olarak Toplanan Bilgiler:</h3>
+        <h3>B. Otomatik Toplanan Bilgiler</h3>
         <ul>
-            <li><strong>Konum Verisi:</strong> Yalnızca sizden <strong>isteğe bağlı olarak</strong> izin almamız halinde, yakındaki eczaneleri bulma özelliği için mevcut konum veriniz işlenir. Bu izni dilediğiniz zaman cihaz ayarlarından kapatabilirsiniz.</li>
-            <li><strong>Cihaz Bilgileri:</strong> Bildirim hatırlatıcılarını gönderebilmek için anonim bir "Bildirim Token'ı" (Notification Token) ve reklamları yönetmek için Reklam Tanımlayıcısı (IDFA) gibi teknik cihaz tanımlayıcıları.</li>
-            <li><strong>Kullanım Verisi:</strong> Uygulamanın hangi özelliklerinin kullanıldığı, karşılaşılan hatalar ve performans sorunları gibi anonim hale getirilmiş istatistiksel kullanım verileri.</li>
+            <li><strong>Konum Verisi:</strong> Yakındaki eczaneleri göstermek için isteğe bağlı konum izni.</li>
+            <li><strong>Cihaz Bilgileri:</strong> Bildirim token’ı, IDFA.</li>
+            <li><strong>Kullanım Verisi:</strong> Performans ve hata analizi için anonim veriler.</li>
         </ul>
 
-        
         <h2>2. Verilerin Kullanım Amaçları</h2>
-        <p>Topladığımız verileri aşağıdaki amaçlar doğrultusunda kullanırız:</p>
         <ul>
-            <li><strong>Hizmet Sunumu:</strong> Kullanıcı hesabı oluşturmanızı ve yönetmenizi sağlamak, ilaç hatırlatıcıları göndermek ve takvim kayıtlarınızı size özel olarak göstermek.</li>
-            <li><strong>Güvenli Kimlik Doğrulama:</strong> Sisteme güvenli bir şekilde giriş yapabilmenizi sağlamak.
-                <p class="important-note">
-                    <strong>Önemli Not:</strong> Hesabınız için oluşturduğunuz şifre, tarafımızca <strong>asla okunamaz.</strong> Şifreniz, veritabanımızda geri döndürülemez bir şekilde şifrelenerek (hash) saklanır ve kimse tarafından (biz dahil) görüntülenemez.
-                </p>
+            <li><strong>Hizmet Sunumu:</strong> Hesap yönetimi ve hatırlatıcılar.</li>
+            <li><strong>Güvenli Kimlik Doğrulama:</strong>
+                <p class="important-note"><strong>Önemli Not:</strong> Şifreniz tarafımızca asla okunamaz.</p>
             </li>
-            <li><strong>Uygulama İyileştirme:</strong> Firebase ve Google servisleri aracılığıyla uygulama performansını izlemek, hataları tespit etmek ve kullanıcı deneyimini iyileştirmek.</li>
-            <li><strong>Reklamcılık:</strong> Google AdMob servisi aracılığıyla uygulama içinde reklamlar göstermek. Reklam kişiselleştirmesini cihaz ayarlarınızdan kısıtlayabilirsiniz.</li>
-            <li><strong>Yasal Yükümlülükler:</strong> Yasal taleplere yanıt vermek ve platformun güvenliğini sağlamak.</li>
+            <li><strong>Uygulama İyileştirme:</strong> Firebase servisleri.</li>
+            <li><strong>Reklamcılık:</strong> Google AdMob.</li>
         </ul>
 
-        
-        <h2>3. Üçüncü Taraf Hizmetler ve Veri Paylaşımı</h2>
-        <p>Verilerinizi üçüncü taraf şirketlere satmayız veya kiralamayız. Verileriniz, yalnızca uygulamanın çalışması için gerekli olan aşağıdaki güvenilir iş ortaklarıyla paylaşılır:</p>
+        <h2>3. Üçüncü Taraf Hizmetler</h2>
         <ul>
-            <li><strong>Google (Firebase & Google Cloud):</strong> Kullanıcı kimlik doğrulaması (Authentication), veritabanı (Firestore), hata takibi (Crashlytics), analiz (Analytics) ve reklam (AdMob) hizmetleri için kullanılır. Bu servisler, verilerinizi bizim adımıza güvenli bir şekilde işler.
-                <ul>
-                    <li>Google'ın gizlilik politikasına <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">buradan</a> ulaşabilirsiniz.</li>
-                </ul>
-            </li>
+            <li><strong>Google Firebase:</strong> Kimlik doğrulama, veritabanı, analiz.</li>
         </ul>
 
-        
         <h2>4. Veri Saklama ve Silme</h2>
-        <p>Kişisel verileriniz, hesabınız aktif olduğu sürece Firebase'in güvenli sunucularında saklanır. Hesabınızı uygulama içinden sildiğinizde, hesabınızla ilişkili tüm veriler (ilaç bilgileri, e-posta, ad-soyad vb.) makul bir süre içinde (genellikle 30 günü geçmeyecek şekilde) kalıcı olarak silinir.</p>
+        <p>Hesabınızı sildiğinizde tüm veriler 30 gün içerisinde kalıcı olarak silinir.</p>
 
-        
         <h2>5. Kullanıcı Haklarınız</h2>
-        <p>Verileriniz üzerinde aşağıdaki haklara sahipsiniz:</p>
         <ul>
-            <li><strong>Erişim ve Düzeltme:</strong> Hesap bilgilerinizi uygulama içinden dilediğiniz zaman güncelleyebilirsiniz.</li>
-            <li><strong>Silme:</strong> Uygulama ayarlarında bulunan "Hesabı Sil" özelliğini kullanarak dilediğiniz zaman hesabınızı ve ilgili tüm verilerinizi kalıcı olarak silme talebi gönderebilirsiniz.</li>
-            <li><strong>İtiraz ve Kısıtlama:</strong> Reklam kişiselleştirmesini, cihazınızın <strong>iOS Ayarları &gt; Gizlilik ve Güvenlik &gt; Takip</strong> menüsünden kısıtlayabilirsiniz.</li>
+            <li>Erişim ve düzeltme</li>
+            <li>Silme</li>
+            <li>İtiraz & kısıtlama</li>
         </ul>
 
-        
         <h2>6. Veri Güvenliği</h2>
-        <p>Verilerinizin güvenliğini ciddiye alıyoruz. Sektör standardı teknik güvenlik önlemleri (HTTPS/TLS ile şifreli veri aktarımı, güvenli kimlik doğrulama vb.) kullanıyoruz. Ancak, internet üzerinden hiçbir veri aktarım yönteminin veya elektronik depolama yönteminin %100 güvenli olmadığını lütfen unutmayın.</p>
+        <p>Verileriniz HTTPS/TLS ile korunur.</p>
 
-        
         <h2>7. Politikadaki Değişiklikler</h2>
-        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda sizi uygulama içi bildirim veya e-posta yoluyla bilgilendireceğiz. Politikayı düzenli olarak gözden geçirmek kullanıcının sorumluluğundadır.</p>
+        <p>Değişiklikler uygulama içi bildirim ile iletilir.</p>
 
-        
         <h2>8. İletişim</h2>
-        <p>Bu gizlilik politikası veya kişisel verilerinizle ilgili herhangi bir sorunuz veya talebiniz olursa, lütfen bizimle iletişime geçmekten çekinmeyin:</p>
         <ul>
             <li><strong>E-posta:</strong> yusufizcinar@gmail.com</li>
         </ul>
+    </div>
 
-    </div> </body>
+
+    <!-- ENGLISH VERSION -->
+    <div lang="en" style="display:none;">
+        <h1>Medory Privacy Policy</h1>
+        <hr>
+        <p class="last-updated"><strong>Last Updated:</strong> November 8, 2025</p>
+
+        <p>At Medory (“Application”), we highly value the privacy and protection of our users' personal data...</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect the following types of information:</p>
+
+        <h3>A. Information You Provide</h3>
+        <ul>
+            <li><strong>Account Information:</strong> Email and full name.</li>
+            <li><strong>Health & Medication Info:</strong> Added medications and reminders.</li>
+        </ul>
+
+        <h3>B. Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Location Data:</strong> Optional location access for showing nearby pharmacies.</li>
+            <li><strong>Device Information:</strong> Notification token, IDFA.</li>
+            <li><strong>Usage Data:</strong> Anonymous analytics and crash reports.</li>
+        </ul>
+
+        <h2>2. Purposes of Data Use</h2>
+        <ul>
+            <li><strong>Service Delivery:</strong> Managing your account and reminders.</li>
+            <li><strong>Secure Authentication:</strong>
+                <p class="important-note"><strong>Important:</strong> Your password is never readable by us.</p>
+            </li>
+            <li><strong>App Improvement:</strong> Firebase services.</li>
+            <li><strong>Advertising:</strong> Google AdMob.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <ul>
+            <li><strong>Google Firebase:</strong> Authentication, database, analytics.</li>
+        </ul>
+
+        <h2>4. Data Retention & Deletion</h2>
+        <p>Your data is permanently deleted within 30 days after account deletion.</p>
+
+        <h2>5. Your Rights</h2>
+        <ul>
+            <li>Access & correction</li>
+            <li>Deletion</li>
+            <li>Objection & restriction</li>
+        </ul>
+
+        <h2>6. Data Security</h2>
+        <p>Your data is protected via HTTPS/TLS encryption.</p>
+
+        <h2>7. Changes to Policy</h2>
+        <p>Major changes will be notified through the app.</p>
+
+        <h2>8. Contact</h2>
+        <ul>
+            <li><strong>Email:</strong> yusufizcinar@gmail.com</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
 </html>
